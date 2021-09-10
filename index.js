@@ -247,7 +247,19 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(arrayT4) {
   /*Your Code Here*/
+  let newArrayT4 = [];
+  for(let i = 0; i < arrayT4.length; i++){
+      let newYearSplit = arrayT4[i].years;
+      newYearSplit.split(' ', 3);
+      if(newYearSplit.startsWith("19")){
+        newArrayT4.push(arrayT4[i].name);
+      }
+  }
+  console.log(newArrayT4);
+  return newArrayT4;
+  
 }
+console.log(get20s(artists));
 
 
 
@@ -260,9 +272,14 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
+function removeArtist(arrayT5, numT5,) {
   /*Your Code Here*/
+  arrayT5.splice(numT5,1);
+  return arrayT5.length;
 }
+
+console.log(removeArtist(artists,5));
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
