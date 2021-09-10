@@ -159,6 +159,11 @@ button:hover{
         width: 75%;
         height: 75%;
     }
+    .artist p{
+        font-size:1.2rem;
+        line-height: 1.8;
+        text-align: center;
+    }
     header{
         justify-content: space-evenly;
         
